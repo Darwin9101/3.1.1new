@@ -1,6 +1,7 @@
 package Darwin9101.springstudents.Controller;
 
 import Darwin9101.springstudents.Service.UserService;
+import Darwin9101.springstudents.Service.UserServiceImpl;
 import Darwin9101.springstudents.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,8 +20,8 @@ public class UserController {
     private UserService userService;
 
     @Autowired
-    public UserController(UserService userService) {
-        this.userService = userService;
+    public UserController(UserServiceImpl userServiceImpl) {
+        this.userService = userServiceImpl;
     }
 
     @GetMapping

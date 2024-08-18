@@ -10,10 +10,8 @@ public class User {
     @GeneratedValue
     private Long id;
 
-    @Column
     private String name;
 
-    @Column
     private String email;
 
     public long getId() {
